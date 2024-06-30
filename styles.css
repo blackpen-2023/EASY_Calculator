@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.4rem;
+    border: none;
+    color: gray;
+    padding: 7px 10px;
+    box-shadow: rgba(0, 0, 0, 0.126) 0px 0px 10px;
+    margin: 0 10px;
+    width: 120px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 16px;
+}
+
+.input-group span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.4rem;
+    border: none;
+    color: gray;
+    padding: 7px 20px;
+    box-shadow: rgba(0, 0, 0, 0.126) 0px 0px 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.loading-container {
+    position: relative;
+    width: 200px;
+    height: 20px;
+    margin: 20px auto;
+    display: none;
+    color: gray;
+}
+
+.loading-bar {
+    border-radius: 0.7rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #4caf50;
+    transition: width 3s;
+}
+
+.status-message {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+#result {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 7px 20px;
+    box-shadow: rgba(0, 0, 0, 0.126) 0px 0px 10px;
+    background-color: white;
+    border-radius: 0.4rem;
+}
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #e7e7e7;
+    color: gray;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    box-sizing: border-box;
+}
+.tec {
+    padding: 7px 20px;
+    box-shadow: rgba(0, 0, 0, 0.126) 0px 0px 10px;
+    border: 0px;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    .input-group input, button {
+        width: 120px;
+        margin-bottom: 10px;
+    }
+    footer {
+        padding: 5px 10px;
+    }
+    .tec {
+        width: 100%;
+        padding: 5px 10px;
+    }
+}
+
